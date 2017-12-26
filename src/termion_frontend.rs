@@ -371,6 +371,12 @@ impl TermionFrontend {
 
         return true;
     }
+
+    pub fn receive_reports(&mut self, report: FrameReport) {
+        let name = report.thread_name.clone();
+
+        self.thread_data.insert(name, report);
+    }
 }
 
 fn draw_frame_report(terminal: &mut TerminalHelper, frame: &FrameReport) {
