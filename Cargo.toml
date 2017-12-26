@@ -1,0 +1,17 @@
+[package]
+name = "tinyprof_termion"
+description = "The termion frontend for tinyprof"
+repository = "https://github.com/tinyprof/tinyprof-termion.git"
+keywords = ["termion", "frontend", "tinyprof"]
+authors = [
+    "not.fl3@gmail.com",
+    "freecoder.xx@gmail.com"
+]
+license = "MIT"
+version = "0.0.1"
+
+[dependencies]
+tinyprof = { git = "https://github.com/tinyprof/tinyprof" }
+lazysort = "0.2.0"
+termion = "1.0"
+gag = "0.1.9"
